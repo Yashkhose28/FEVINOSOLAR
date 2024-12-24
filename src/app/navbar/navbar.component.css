@@ -1,0 +1,187 @@
+.horizontal-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #ffffff;
+  border-bottom: 2px solid #e0e0e0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+  max-width: 100%;
+  height: auto;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-grow: 1; /* Allow the nav-container to take up remaining space */
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center; /* Keep the nav links centered */
+  flex-grow: 1;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333333;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #007bff;
+}
+
+/* Enquiry Now button styles */
+.enquiry-now a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.enquiry-now a:hover {
+  color: #007bff;
+}
+
+.enquiry-now img {
+  margin-left: 5px;
+}
+
+/* Explore Menu Styling */
+.explore-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.explore-btn {
+  background-color: transparent;
+  border: none;
+  color: #333;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.explore-btn i {
+  margin-right: 8px;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  z-index: 1;
+  border-radius: 4px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.explore-menu:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu a {
+  color: #333;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-menu a i {
+  margin-right: 8px;
+}
+
+.dropdown-menu a:hover {
+  background-color: #ddd;
+}
+
+/* Optional: Hover effect for Explore Menu button */
+.explore-btn:hover {
+  background-color: #f1f1f1;
+  border-radius: 4px;
+}
+
+/* Right-aligned elements */
+.nav-container .enquiry-now,
+.nav-container .explore-menu,
+.nav-container .search-btn {
+  margin-left: auto; /* Pushes the elements to the right */
+}
+
+.search-btn {
+  background-color: ;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.search-btn:hover {
+  background-color: #0056b3;
+}
+
+.search-btn i {
+  margin-right: 5px;
+}
+
+
+/* Dropdown Styles */
+.nav-links .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.nav-links .dropdown .dropbtn {
+  background-color: transparent;
+  border: none;
+  color: #333;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.nav-links .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.nav-links .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.nav-links .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.nav-links .dropdown-content a:hover {
+  background-color: #ddd;
+}

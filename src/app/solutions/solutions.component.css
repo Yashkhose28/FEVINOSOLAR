@@ -1,0 +1,81 @@
+/* General Container Styling */
+.container {
+    padding: 20px;
+    background-color: #fff8e1; /* Soft yellow background */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Card Styling */
+  .card {
+    border: none; /* Remove default border */
+    border-radius: 10px; /* Rounded corners */
+    background: linear-gradient(145deg, #ffffff, #f1f1f1); /* Subtle gradient */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1), -4px -4px 10px rgba(255, 255, 255, 0.7); /* Neomorphic effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add hover effects */
+  }
+  
+  .card:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.2), -6px -6px 15px rgba(255, 255, 255, 0.9); /* More pronounced shadow */
+  }
+  
+  /* Card Body */
+  .card-body {
+    padding: 20px;
+  }
+  
+  /* Card Title */
+  .card-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #f57c00; /* Vibrant orange color */
+    margin-bottom: 15px;
+  }
+  
+  /* Subheadings for sections */
+  .card-body h6 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #37474f; /* Dark gray */
+    margin-top: 10px;
+  }
+  
+  /* List Styling */
+  .card-body ul {
+    padding-left: 20px; /* Add spacing for bullets */
+    list-style: disc;
+    color: #616161; /* Medium gray text */
+  }
+  
+  .card-body ul li {
+    margin-bottom: 8px; /* Add spacing between list items */
+    font-size: 0.95rem;
+  }
+  
+  /* Paragraph Styling */
+  .card-body p {
+    font-size: 0.95rem;
+    color: #424242; /* Slightly darker gray for text */
+    margin: 0;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .container {
+      padding: 10px;
+    }
+  
+    .card-body {
+      padding: 15px;
+    }
+  
+    .card-title {
+      font-size: 1rem;
+    }
+  
+    .card-body ul li {
+      font-size: 0.9rem;
+    }
+  }
+  

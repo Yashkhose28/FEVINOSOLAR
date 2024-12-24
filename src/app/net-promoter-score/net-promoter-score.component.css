@@ -1,0 +1,366 @@
+/* Container styles */
+.container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Logo container styles */
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+  
+  .logo-item {
+    position: relative;
+    display: inline-block;
+    width: 10%;
+  }
+  
+  /* Logo numbering styles */
+  .logo-number {
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    padding: 5px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+  }
+
+  /* Specific background colors for each logo number */
+.logo-item:nth-child(1) .logo-number {
+    background-color: red; 
+}
+.logo-item:nth-child(2) .logo-number {
+    background-color: red; 
+}
+.logo-item:nth-child(3) .logo-number {
+    background-color: yellow; 
+}
+.logo-item:nth-child(4) .logo-number {
+    background-color: green; 
+}
+.logo-item:nth-child(5) .logo-number {
+    background-color: green; 
+}
+  
+  /* Logo styles - Medium size */
+  .logo-item img {
+    width: 95px; /* Medium size */
+    height: 95px; /* Medium size */
+    object-fit: contain;
+  }
+  
+  /* Centered heading styles */
+  h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    margin: 10px 0ox;
+    margin-top: 90px;
+    margin-bottom: 0px;
+    background-color: #ccc;
+    border-radius: 20px;
+    width: 390px;
+    height: 70px;
+    text-align: center; /* Centers the text inside the h1 */
+    line-height: 60px; /* Vertically centers the text */
+    margin: 60px auto 90px auto; /* Centers the h1 in the container */
+  }
+
+  /* NPS Formula Section Styles */
+.nps-formula {
+    text-align: center;
+    margin-top: 80px;
+    padding: 20px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .nps-formula h3 {
+    font-size: 25px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+  }
+  
+  /* Wine color for Promoters and Detractors */
+  .wine-color {
+    color: red; /* Wine color */
+  }
+  
+
+  /* Section for Circles */
+.circle-section {
+    display: flex;
+    justify-content: flex-start; /* Align items to the left */
+    align-items: center;
+    margin-top: -130px;
+    height: 200px;
+    gap: 60px; /* Decreased gap between circles */
+    margin-left: 40px;
+}
+
+/* Circle Styling */
+.circle {
+    width: 100px; /* Diameter of the circle */
+    height: 100px;
+    border-radius: 50%; /* Makes the shape a circle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for better visibility */
+    padding: 10px; /* Adds space between the content and the border */
+}
+
+/* Circle 1 Background Color and Border */
+.circle-1 {
+    background-color: grey; /* Example color for the first circle */
+    border: 7px solid green; /* Light Red Border */
+    color: green;
+}
+
+/* Circle 2 Background Color and Border */
+.circle-2 {
+    background-color: grey; /* Example color for the second circle */
+    border: 7px solid yellow; /* Light Yellow Border */
+    color: yellow;
+}
+
+/* Circle 3 Background Color and Border */
+.circle-3 {
+    background-color: grey; /* Example color for the third circle */
+    border: 7px solid red; /* Light Green Border */
+    color: maroon;
+}
+
+/* Horizontal Bar Section Styles */
+.horizontal-bar-section {
+    display: flex;
+    flex-direction: column; /* Stack the bars vertically */
+    gap: 10px; /* Adjust the space between the bars */
+    margin-top: 50px;
+    width: 100%; /* Full-width section */
+    max-width: 600px; /* Optional: limit the width */
+    margin-left: 0; /* Align to the left */
+    margin-right: auto; /* Remove centering */
+}
+/* Bar Styles */
+.bar {
+    height: 15px; /* Height of each bar */
+    border-radius: 15px 0 0 15px; /* Rounded on the left, straight on the right */
+    overflow: hidden; /* Ensures the background doesn't follow the border radius */
+    position: relative; /* For better gradient control */
+}
+
+/* Specific Colors and Widths for Each Bar */
+.bar1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 85%; /* Percentage of red */
+    background-color: red;
+}
+
+.bar1::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 15%; /* Percentage of black */
+    background-color: black;
+}
+
+.bar2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 40%; /* Percentage of yellow */
+    background-color: yellow;
+}
+
+.bar2::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 60%; /* Percentage of black */
+    background-color: black;
+}
+
+.bar3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 60%; /* Percentage of grey */
+    background-color: green;
+}
+
+.bar3::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 40%; /* Percentage of black */
+    background-color: black;
+}
+
+/* Bar Info Section (Text on the right side) */
+/* Adjust Bar Info Layout */
+.bar-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Styling for the Label (Percentage and Count) */
+/* Bar Label Styling */
+.bar-label {
+    display: flex;
+    gap: 10px;
+}
+
+/* Percentage Styling */
+.percentage {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 24px;
+    color: pink;
+    font-weight: bold;
+    margin-left: 800px;
+}
+
+/* Count Styling */
+.count {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 24px;
+    color: green;
+    font-weight: bold;
+}
+
+/* Specific Background Colors for Bar Types */
+.bar1-type {
+    background-color: red; /* Red for Detractors */
+    width: 140px;
+
+}
+
+.bar2-type {
+    background-color: yellow; /* Yellow for Passives */
+    width: 160px;
+    mar
+}
+
+.bar3-type {
+    background-color: green; /* Grey for Promoters */
+    width: 140px;
+
+}
+
+/* Styling for the Type (DETRACTORS, PASSIVES, PROMOTERS) */
+.bar-type {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    font-weight: bold;
+    border-radius: 0 15px 15px 0; /* Left side straight, right side curved */
+    color: white; /* Black text color for better readability */
+    margin-right: -500px;
+}
+
+/* Total Section Styling */
+.total-info {
+    display: flex;
+    justify-content: flex-end; /* Move total section to the right */
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 1050px;
+}
+
+/* Total Label Styling */
+.total-label {
+    display: flex;
+    gap: 10px;
+}
+
+/* Total Text Styling */
+.Total {
+    padding: 5px 15px;
+    background-color: black;
+    width: 120px;
+    height: 40px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    border-radius: 20px 0 0 20px; /* Left side curved, right side straight */
+    margin-left: 500px;
+    margin-right: 10px;
+    margin-top: 0px;
+}
+
+/* Count Styling */
+.cnt {
+    padding: 5px 15px;
+    color: black;
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: -10px;
+    
+
+}
+
+/* Styling for the Count Class */
+.count2 {
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: yellow;
+    font-weight: bold;
+    font-size: 24px;
+    margin-left: 15px;
+}
+
+/* Styling for the Count Class */
+.count1 {
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: red;
+    font-weight: bold;
+    font-size: 24px;
+    margin-left: 5px;
+}
+
+/* Styling for the Count Class */
+.count3 {
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: green;
+    font-weight: bold;
+    font-size: 24px;
+    margin-left: 5px;
+}

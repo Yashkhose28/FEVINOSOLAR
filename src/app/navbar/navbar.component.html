@@ -1,0 +1,86 @@
+<nav class="horizontal-navbar">
+  <!-- Company Logo on the Left -->
+  <a class="navbar-brand" href="#">
+    <img
+      src="https://www.fevino.com/wp-content/uploads/2024/08/Mediamodifier-Design-2-cropped-cropped-2.svg"
+      alt="Fevino Solar Logo"
+      width="130"
+    />
+  </a>
+
+    <!-- Navigation Links and Additional Features -->
+    <div class="nav-container">
+      <!-- Navigation Links -->
+      <ul class="nav-links">
+        <li><a routerLink="/" routerLinkActive="active">HOME</a></li>
+        <li><a routerLink="/about-us" routerLinkActive="active">ABOUT US</a></li>
+        <li><a routerLink="/solutions" routerLinkActive="active">SOLUTIONS</a></li>
+        
+        <!-- ROOFTOPS Dropdown -->
+        <li class="dropdown">
+          <a href="#" class="dropbtn">ROOFTOPS</a>
+          <div class="dropdown-content">
+            <a href="/tata-power-solaroof">Tata Power Solaroof</a>
+            <a href="/residential">Residential</a>
+            <a href="/commercial-industrial">Commercial & Industrial</a>
+            <a href="/institution">Institution</a>
+            <a href="/financing">Financing</a>
+          </div>
+        </li>
+        
+        <li><a routerLink="/contact-support" routerLinkActive="active">CONTACT SUPPORT</a></li>
+        <li>
+          <a routerLink="/enquiry-now" routerLinkActive="active">
+          </a>
+        </li>
+      </ul>
+    
+
+    <!-- Enquiry Now Button with Logo -->
+    <div class="enquiry-now">
+      <a routerLink="/enquiry-now" routerLinkActive="active">
+        ENQUIRY NOW
+        <img
+          src="https://cdn-icons-png.flaticon.com/128/1436/1436694.png" 
+          alt="Enquiry Now Logo" 
+          width="20"
+        />
+      </a>
+    </div>
+
+    <!-- Explore Menu with Icons -->
+    <div class="explore-menu">
+      <button class="explore-btn">
+        <i class="fa fa-compass"></i> Explore Menu
+      </button>
+      <div class="dropdown-menu">
+        <a href="/projects">
+          <i class="fa fa-briefcase"></i> Projects
+        </a>
+        <a href="/services">
+          <i class="fa fa-cogs"></i> Services
+        </a>
+        <a href="/news">
+          <i class="fa fa-newspaper"></i> News
+        </a>
+      </div>
+    </div>
+
+    <!-- Search Button -->
+    <button class="search-btn" onclick="toggleSearch()">
+      <img 
+        src="https://cdn-icons-png.flaticon.com/128/622/622669.png" 
+        alt="Search Logo" 
+        width="20" 
+      />
+    </button>
+
+    <!-- Search Input (Initially Hidden) -->
+    <div id="search-container" style="display: none;">
+      <input type="text" id="search-input" placeholder="Search..." />
+      <button class="search-btn" onclick="executeSearch()">
+        <i class="fa fa-search"></i>
+      </button>
+    </div>
+  </div>
+</nav>

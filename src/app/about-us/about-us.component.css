@@ -1,0 +1,149 @@
+.about-us {
+  text-align: center;
+  padding: 80px;
+  background-color: #ffffff;
+  font-family: "Roboto", sans-serif;
+}
+
+.about-us h1 {
+  font-size: 3.5em;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  animation: fade-in 1.5s ease-in-out;
+}
+
+.about-us h2 {
+  font-size: 1.8em;
+  color: #34495e;
+  margin-bottom: 40px;
+  animation: fade-in 2s ease-in-out;
+}
+
+.about-us-sections {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 0px;
+  padding: 0px;
+}
+
+.about-us-item {
+  background: linear-gradient(145deg, #f0f0f0, #ffffff);
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s, box-shadow 0.4s;
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.about-us-item:hover {
+  transform: scale(1.08);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  max-width: 90px;
+  margin-bottom: 25px;
+  animation: bounce 2.5s infinite;
+}
+
+.about-us-item h1 {
+  font-size: 1.8em;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.about-us-item p {
+  font-size: 1.1em;
+  color: #7f8c8d;
+  line-height: 1.6;
+}
+
+/* Animations */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-in {
+  animation: slide-in 1.2s ease-in-out forwards;
+}
+
+.about-us-next-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 90px;
+}
+
+.about-us-item-small {
+  position: relative;
+  text-align: center;
+  width: 45%;
+}
+
+.image-container {
+  position: relative;
+}
+
+.small-image {
+  width: 100%;
+  height: auto;
+  max-width: 450px; /* Adjust the max width as per your design */
+  border-radius: 15px;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: rgba(76, 175, 80, 0.8); /* Slight transparency */
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 15px;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background-color: rgba(76, 175, 80, 1);
+}
+
